@@ -1,0 +1,32 @@
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next/
+/out/
+
+# Environment files — NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+
+# Local file storage (both public and private uploads) — these are
+# runtime data, not source, and the private one must never be committed
+# regardless of gitignore working correctly (defense in depth: it also
+# lives outside /public so Next.js never serves it as static content).
+/public/uploads/
+/private-uploads/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS/editor cruft
+.DS_Store
+*.pem
+
+# TypeScript build info
+*.tsbuildinfo
+# next-env.d.ts is intentionally NOT ignored — see the note in that file;
+# it's committed here so the project has a complete file set without
+# relying on `next dev`'s first-run generation.
